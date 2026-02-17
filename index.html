@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Tutorial 🚀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🚀</span>
+                <span class="brand-text">Git Tutorial</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#step1">01 VS Code</a>
+                <a href="#step2">02 Git</a>
+                <a href="#step3">03 GitHub</a>
+                <a href="#step4">04 Repository</a>
+                <a href="#step5">05 Commands</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-track">
+        <div class="progress-fill" id="progress"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-gradient">Master Git & GitHub</span>
+            </h1>
+            <p class="hero-subtitle">From VS Code to GitHub in 5 Easy Steps</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-emoji">⚡</span>
+                    <span class="stat-text">5 Steps</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-emoji">⏱️</span>
+                    <span class="stat-text">15 Minutes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-emoji">🎯</span>
+                    <span class="stat-text">Beginner Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- STEP 1: INSTALL VS CODE -->
+        <section id="step1" class="section">
+            <div class="section-header">
+                <div class="section-number">01</div>
+                <div class="section-title">
+                    <h2>Install Visual Studio Code</h2>
+                    <p>Your powerful, free code editor</p>
+                </div>
+                <div class="section-emoji">💻</div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">✨</div>
+                <div class="card-content">
+                    <h3>What is VS Code?</h3>
+                    <p>Visual Studio Code is a lightweight but powerful source code editor. It comes with built-in support for Git, debugging, and thousands of extensions.</p>
+                </div>
+            </div>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <p>Visit <a href="https://code.visualstudio.com" target="_blank" class="link">code.visualstudio.com</a></p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <p>Download for your operating system (Windows, Mac, Linux)</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <p>Run the installer and follow the setup wizard</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <p>Launch VS Code after installation completes</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-emoji">⚡</div>
+                    <h4>Lightning Fast</h4>
+                    <p>Opens instantly</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">🎨</div>
+                    <h4>Customizable</h4>
+                    <p>Themes & extensions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">🔧</div>
+                    <h4>Built-in Git</h4>
+                    <p>Version control</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">🆓</div>
+                    <h4>Free & Open</h4>
+                    <p>Completely free</p>
+                </div>
+            </div>
+
+            <div class="tip-card success">
+                <div class="tip-icon">💡</div>
+                <div class="tip-content">
+                    <strong>Pro Tip:</strong> During installation, check "Add to PATH" option for easy terminal access!
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 2: INSTALL GIT -->
+        <section id="step2" class="section">
+            <div class="section-header">
+                <div class="section-number">02</div>
+                <div class="section-title">
+                    <h2>Install Git</h2>
+                    <p>Version control system for tracking changes</p>
+                </div>
+                <div class="section-emoji">📦</div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">✨</div>
+                <div class="card-content">
+                    <h3>What is Git?</h3>
+                    <p>Git is a distributed version control system that tracks changes in your code. It helps you manage different versions of your project and collaborate with others seamlessly.</p>
+                </div>
+            </div>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <p>Visit <a href="https://git-scm.com/downloads" target="_blank" class="link">git-scm.com/downloads</a></p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <p>Download Git for your operating system</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <p>Run installer with default settings (recommended)</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <p>Verify installation in terminal</p>
+                </div>
+            </div>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Verify Git Installation</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git --version')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git --version</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Checks if Git is installed and shows version number</p>
+                    <p><strong>When to use:</strong> After installation to verify everything works</p>
+                </div>
+            </div>
+
+            <div class="tip-card info">
+                <div class="tip-icon">💡</div>
+                <div class="tip-content">
+                    <strong>Windows Users:</strong> Git comes with Git Bash - a Unix-style terminal perfect for Git commands!
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 3: CREATE GITHUB ACCOUNT -->
+        <section id="step3" class="section">
+            <div class="section-header">
+                <div class="section-number">03</div>
+                <div class="section-title">
+                    <h2>Create GitHub Account</h2>
+                    <p>Join millions of developers worldwide</p>
+                </div>
+                <div class="section-emoji">🌐</div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">✨</div>
+                <div class="card-content">
+                    <h3>What is GitHub?</h3>
+                    <p>GitHub is the world's largest platform for hosting and sharing code. It's where developers collaborate, build software, and showcase their work to potential employers.</p>
+                </div>
+            </div>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <p>Visit <a href="https://github.com" target="_blank" class="link">github.com</a></p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <p>Click "Sign up" in the top-right corner</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <p>Enter email, create password, choose username</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <p>Verify email and complete onboarding</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-emoji">📦</div>
+                    <h4>Unlimited Repos</h4>
+                    <p>Public & private</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">👥</div>
+                    <h4>Collaboration</h4>
+                    <p>Work with teams</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">🔒</div>
+                    <h4>Secure</h4>
+                    <p>Built-in security</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-emoji">💼</div>
+                    <h4>Portfolio</h4>
+                    <p>Showcase work</p>
+                </div>
+            </div>
+
+            <div class="tip-card warning">
+                <div class="tip-icon">🔐</div>
+                <div class="tip-content">
+                    <strong>Security Tip:</strong> Enable two-factor authentication (2FA) to keep your account extra secure!
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 4: CREATE REPOSITORY -->
+        <section id="step4" class="section">
+            <div class="section-header">
+                <div class="section-number">04</div>
+                <div class="section-title">
+                    <h2>Create Repository</h2>
+                    <p>Your project's home on GitHub</p>
+                </div>
+                <div class="section-emoji">📁</div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">✨</div>
+                <div class="card-content">
+                    <h3>What is a Repository?</h3>
+                    <p>A repository (or "repo") is like a project folder that contains all your files and their complete history. Think of it as your project's storage container on GitHub.</p>
+                </div>
+            </div>
+
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <p>Log in to your GitHub account</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <p>Click the <strong>+</strong> icon in top-right corner</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <p>Select "New repository"</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <p>Enter repository name (e.g., "my-first-project")</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">5</div>
+                    <p>Add description (optional)</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">6</div>
+                    <p>Choose Public or Private</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">7</div>
+                    <p>Click "Create repository"</p>
+                </div>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-card public">
+                    <div class="comparison-header">
+                        <span class="comparison-emoji">🌍</span>
+                        <h4>Public Repository</h4>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>✓ Visible to everyone</li>
+                        <li>✓ Great for open-source</li>
+                        <li>✓ Build your portfolio</li>
+                        <li>✓ Free unlimited repos</li>
+                    </ul>
+                </div>
+                <div class="comparison-card private">
+                    <div class="comparison-header">
+                        <span class="comparison-emoji">🔒</span>
+                        <h4>Private Repository</h4>
+                    </div>
+                    <ul class="comparison-list">
+                        <li>✓ Only you can see it</li>
+                        <li>✓ Perfect for personal work</li>
+                        <li>✓ Invite collaborators</li>
+                        <li>✓ Free for personal use</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tip-card info">
+                <div class="tip-icon">💡</div>
+                <div class="tip-content">
+                    <strong>Best Practice:</strong> Use lowercase letters and hyphens for repo names. Example: "my-awesome-project"
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 5: GIT COMMANDS -->
+        <section id="step5" class="section">
+            <div class="section-header">
+                <div class="section-number">05</div>
+                <div class="section-title">
+                    <h2>Essential Git Commands</h2>
+                    <p>Push your code from VS Code to GitHub</p>
+                </div>
+                <div class="section-emoji">⚡</div>
+            </div>
+
+            <div class="info-card">
+                <div class="card-icon">✨</div>
+                <div class="card-content">
+                    <h3>Let's Get Started!</h3>
+                    <p>Open VS Code's integrated terminal (Ctrl+` or Cmd+`) and follow these commands in order. Each command is explained below.</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">🎯 Initialize Your Project</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Initialize Git Repository</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git init')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git init</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Creates a new Git repository in your current folder</p>
+                    <p><strong>When to use:</strong> Run this once when starting a new project</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">👤 Configure Your Identity</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Set Your Name</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git config --global user.name &quot;Your Name&quot;')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git config --global user.name "Your Name"</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Sets your name for all commits</p>
+                    <p><strong>When to use:</strong> First-time Git setup only</p>
+                </div>
+            </div>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Set Your Email</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git config --global user.email &quot;your.email@example.com&quot;')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git config --global user.email "your.email@example.com"</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Sets your email (use your GitHub email)</p>
+                    <p><strong>When to use:</strong> First-time Git setup, after setting name</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">📦 Stage & Save Your Changes</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Stage All Files</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git add .')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git add .</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Prepares all modified files for commit</p>
+                    <p><strong>When to use:</strong> After making changes, before committing</p>
+                </div>
+            </div>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Commit Changes</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git commit -m &quot;Your message here&quot;')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git commit -m "Your message here"</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Saves staged changes with a descriptive message</p>
+                    <p><strong>When to use:</strong> After staging files with git add</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">🌿 Set Default Branch</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Rename Branch to Main</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git branch -M main')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git branch -M main</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Renames your branch to "main"</p>
+                    <p><strong>When to use:</strong> Before first push (GitHub uses "main" as default)</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">🔗 Connect to GitHub</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Add Remote Repository</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git remote add origin https://github.com/username/repo-name.git')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git remote add origin https://github.com/username/repo-name.git</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Links your local project to GitHub repository</p>
+                    <p><strong>When to use:</strong> After creating repo on GitHub (replace username/repo-name!)</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">🚀 Upload to GitHub</h3>
+
+            <div class="colab-cell highlight">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Push to GitHub</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git push -u origin main')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git push -u origin main</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Uploads your code to GitHub for the first time</p>
+                    <p><strong>When to use:</strong> After connecting remote repository</p>
+                </div>
+            </div>
+
+            <div class="section-divider">
+                <span class="divider-text">📊 Post-Commit Commands</span>
+            </div>
+
+            <h3 class="command-section-title">📊 Check Repository Status</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Check Status</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git status')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git status</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Shows modified, staged, or untracked files</p>
+                    <p><strong>When to use:</strong> Anytime! Check what changes you've made</p>
+                </div>
+            </div>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">View Commit History</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git log --oneline')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git log --oneline</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Displays commit history in compact format</p>
+                    <p><strong>When to use:</strong> To review past changes (press 'q' to exit)</p>
+                </div>
+            </div>
+
+            <h3 class="command-section-title">🔄 Sync with GitHub</h3>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Pull Latest Changes</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git pull origin main')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git pull origin main</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Downloads changes from GitHub to your computer</p>
+                    <p><strong>When to use:</strong> Before starting work or when collaborating</p>
+                </div>
+            </div>
+
+            <div class="colab-cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="play-btn">▶</div>
+                        <div class="cell-label">Push Updates</div>
+                    </div>
+                    <button class="copy-btn" onclick="copyCode('git push')">📋 Copy</button>
+                </div>
+                <div class="cell-code">
+                    <span class="code-prompt">$</span>
+                    <code class="code-text">git push</code>
+                </div>
+                <div class="cell-desc">
+                    <p><strong>What it does:</strong> Uploads new commits to GitHub (simplified)</p>
+                    <p><strong>When to use:</strong> After committing changes you want to share</p>
+                </div>
+            </div>
+
+            <div class="workflow-card">
+                <h3 class="workflow-title">🔄 Typical Daily Workflow</h3>
+                <div class="workflow-steps">
+                    <div class="workflow-step-item">
+                        <div class="workflow-step-number">1</div>
+                        <div class="workflow-step-content">
+                            <div class="workflow-emoji">✏️</div>
+                            <p>Edit your files</p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step-item">
+                        <div class="workflow-step-number">2</div>
+                        <div class="workflow-step-content">
+                            <div class="workflow-emoji">📦</div>
+                            <p><code>git add .</code></p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step-item">
+                        <div class="workflow-step-number">3</div>
+                        <div class="workflow-step-content">
+                            <div class="workflow-emoji">💾</div>
+                            <p><code>git commit -m "msg"</code></p>
+                        </div>
+                    </div>
+                    <div class="workflow-arrow">→</div>
+                    <div class="workflow-step-item">
+                        <div class="workflow-step-number">4</div>
+                        <div class="workflow-step-content">
+                            <div class="workflow-emoji">🚀</div>
+                            <p><code>git push</code></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-banner">
+                <div class="success-icon">🎉</div>
+                <div class="success-content">
+                    <h3>Congratulations!</h3>
+                    <p>You now know how to upload your code to GitHub! Keep practicing these commands and they'll become second nature.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-text">Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
